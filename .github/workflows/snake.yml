@@ -1,0 +1,61 @@
+name: Update contribution snake
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * 1'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/snake.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Generate animations from actual contributions
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/github-snake.svg
+            assets/github-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Enable the section once its images exist
+        shell: bash
+        run: |
+          if ! grep -q '<!-- contribution-snake -->' README.md; then
+            cat >> README.md <<'EOF'
+
+          <!-- contribution-snake -->
+          ## A little motion from my contributions
+
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="assets/github-snake-dark.svg" />
+            <source media="(prefers-color-scheme: light)" srcset="assets/github-snake.svg" />
+            <img alt="Snake animation generated from my actual GitHub contribution graph" src="assets/github-snake.svg" />
+          </picture>
+          EOF
+          fi
+      - name: Commit generated assets
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/github-snake.svg assets/github-snake-dark.svg README.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: refresh contribution animation'
+            git push origin HEAD:main
+          fi

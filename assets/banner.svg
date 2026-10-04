@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="380" viewBox="0 0 1280 380" role="img" aria-labelledby="title desc">
+<title id="title">Ibrahim Hamdy — AI Engineering and Data Science</title>
+<desc id="desc">A violet and cyan technical illustration connects data points to an intelligence network. From raw data to useful intelligence.</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0B1020"/><stop offset="1" stop-color="#17112D"/></linearGradient>
+  <linearGradient id="accent"><stop stop-color="#A78BFA"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+  <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#FFFFFF" stroke-opacity=".035"/></pattern>
+</defs>
+<rect width="1280" height="380" rx="24" fill="url(#bg)"/>
+<rect width="1280" height="380" rx="24" fill="url(#grid)"/>
+<path d="M0 378H1280" stroke="url(#accent)" stroke-width="4"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<rect x="64" y="49" width="186" height="30" rx="15" fill="#8B5CF6" fill-opacity=".15" stroke="#A78BFA" stroke-opacity=".4"/>
+<circle cx="81" cy="64" r="4" fill="#22D3EE"/>
+<text x="95" y="69" fill="#C4B5FD" font-size="12" letter-spacing="1.8">AL-JID / GITHUB</text>
+<text x="64" y="153" fill="#F8FAFC" font-size="64" font-weight="700" letter-spacing="-2">Ibrahim Hamdy</text>
+<text x="67" y="203" fill="url(#accent)" font-size="26" font-weight="600">AI Engineering &amp; Data Science</text>
+<text x="67" y="246" fill="#A8B3CA" font-size="19">From raw data to useful intelligence.</text>
+<g font-size="13" fill="#CBD5E1">
+<rect x="66" y="288" width="111" height="34" rx="9" fill="#FFFFFF" fill-opacity=".055"/><text x="91" y="310">AI APPS</text>
+<rect x="187" y="288" width="180" height="34" rx="9" fill="#FFFFFF" fill-opacity=".055"/><text x="204" y="310">MACHINE LEARNING</text>
+<rect x="377" y="288" width="136" height="34" rx="9" fill="#FFFFFF" fill-opacity=".055"/><text x="399" y="310">ANALYTICS</text>
+</g>
+</g>
+<g fill="none" stroke-width="1.5">
+<circle cx="1020" cy="190" r="127" stroke="#A78BFA" stroke-opacity=".15"/>
+<circle cx="1020" cy="190" r="94" stroke="#22D3EE" stroke-opacity=".2" stroke-dasharray="4 12"/>
+<path d="M872 117L955 146L1020 91L1110 130L1157 230L1076 282L967 258L872 117 M955 146L967 258L1110 130 M1020 91L1020 190L1157 230 M955 146L1020 190L1076 282" stroke="url(#accent)" stroke-opacity=".5"/>
+</g>
+<g fill="#151A30" stroke="url(#accent)" stroke-width="2">
+<circle cx="872" cy="117" r="8"/><circle cx="955" cy="146" r="10"/><circle cx="1020" cy="91" r="8"/><circle cx="1110" cy="130" r="10"/><circle cx="1157" cy="230" r="8"/><circle cx="1076" cy="282" r="10"/><circle cx="967" cy="258" r="8"/>
+<circle cx="1020" cy="190" r="23"/>
+</g>
+<g fill="#22D3EE"><circle cx="1020" cy="190" r="6"/><circle cx="1020" cy="190" r="33" fill="none" stroke="#22D3EE" stroke-opacity=".35"><animate attributeName="r" values="28;45;28" dur="4s" repeatCount="indefinite"/><animate attributeName="stroke-opacity" values=".4;.08;.4" dur="4s" repeatCount="indefinite"/></circle></g>
+<g fill="#A78BFA"><circle cx="872" cy="117" r="3"/><circle cx="1110" cy="130" r="4"/><circle cx="1076" cy="282" r="4"/></g>
+<text x="935" y="343" font-family="Consolas,monospace" font-size="13" fill="#7C8AA5">DATA → MODELS → INSIGHTS</text>
+</svg>

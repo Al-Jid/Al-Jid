@@ -93,3 +93,12 @@ These learning projects explore different modeling tasks. Their notebooks includ
 | [Audi car price prediction](https://github.com/Al-Jid/Audi-Car-Price-Prediction) | Regression | Linear regression, decision trees, random forests |
 | [BigMart sales segmentation](https://github.com/Al-Jid/BigMart-Sales-Customer-Segmentation) | Clustering of item/outlet sales observations | K-Means, DBSCAN, PCA, cluster evaluation |
 | [Machine learning project index](https://github.com/Al-Jid/Machine-Learning-Portfolio) | Portfolio navigation | Classification, regression, and clustering |
+
+<!-- contribution-snake -->
+## A little motion from my contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="assets/github-snake.svg" />
+  <img alt="Snake animation generated from my actual GitHub contribution graph" src="assets/github-snake.svg" />
+</picture>
